@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class sample
+{
+	private:
+		int a;
+	public:
+		int b;
+		void init(int a)
+		{this->a = a;}
+		void display()
+		{cout<<"a: "<<a<<endl;}
+};
+
+int main()
+{
+	sample sam;
+	sam.init(100);
+	sam.b=200;
+	
+	sam.display();
+	cout<<"b: "<<sam.b<<endl;
+	
+	return 0;		
+}
